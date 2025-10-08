@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="style.css" rel="stylesheet"/>
+<title>Carlos Uribe Gomez</title>
+<script src="https://unpkg.com/feather-icons"></script><style>
+/* v16: icons + whatsapp + instagram color */
+.icon{width:20px;height:20px;vertical-align:middle}
+.icon, .icon *{stroke:currentColor;stroke-width:1.5;fill:none}
+.whatsapp-link{color:inherit;text-decoration:none}
+.whatsapp-link:hover{text-decoration:underline}
+footer a{color:inherit}
+/* Instagram strictly black */
+.icon-instagram, .icon-instagram *{stroke:#111 !important}
+</style><style>
+/* v17 fix: enforce minimal instagram and clean email card */
+.icon{width:20px;height:20px;vertical-align:middle}
+.icon, .icon *{stroke:currentColor;stroke-width:1.5;fill:none}
+.icon-instagram, .icon-instagram *{stroke:#111 !important}
+footer a{color:inherit}
+</style><style>
+/* v17b: icon colors */
+.icon{width:20px;height:20px;vertical-align:middle}
+.icon, .icon *{stroke:currentColor;stroke-width:1.5;fill:none}
+.icon-instagram, .icon-instagram *{stroke:#111 !important}
+footer a{color:inherit}
+</style><style>
+/* v16.1 enforce footer instagram black & link colors */
+footer a{color:inherit}
+.icon-instagram, .icon-instagram *{stroke:#111 !important; fill:none !important}
+</style><style>
+/* v17: icons & instagram black & whatsapp link */
+.icon{width:20px;height:20px;vertical-align:middle}
+.icon, .icon *{stroke:currentColor;stroke-width:1.5;fill:none}
+.icon-instagram, .icon-instagram *{stroke:#111 !important}
+.whatsapp-link{color:inherit;text-decoration:none}
+.whatsapp-link:hover{text-decoration:underline}
+footer a{color:inherit}
+</style><style>
+/* v19 minimal language toggle */
+#lang-toggle{
+  position: fixed;
+  right: max(12px, env(safe-area-inset-right));
+  top: max(12px, env(safe-area-inset-top));
+  z-index: 10001;
+  width: 36px; height: 36px;
+  border-radius: 999px;
+  background: rgba(17,17,17,.75);
+  color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  letter-spacing: .6px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  opacity: .9;
+}
+#lang-toggle:hover{ opacity: 1; }
+@media print { #lang-toggle{ display:none } }
+
+@media (max-width: 768px){
+  #lang-toggle{
+    left:auto !important;
+    right:max(16px, env(safe-area-inset-right)) !important;
+    top: calc(16px + 48px + 8px) !important; /* debajo del menú (48px alto) con separación */
+  }
+}
+
+</style><style>
+/* v21: scoped language toggle only */
+#lang-toggle{
+  position:fixed; right:max(12px, env(safe-area-inset-right)); top:max(12px, env(safe-area-inset-top));
+  z-index:9999; width:36px; height:36px; border-radius:999px;
+  background:rgba(17,17,17,.75); color:#fff; border:none;
+  display:inline-flex; align-items:center; justify-content:center;
+  font: inherit; font-size:10px; letter-spacing:.6px; cursor:pointer;
+  backdrop-filter:blur(4px); opacity:.9;
+}
+#lang-toggle:hover{ opacity:1; }
+@media print { #lang-toggle{ display:none } }
+</style><link rel="icon" type="image/svg+xml" href="favicon.svg"/></head>
+<body>
+<!-- Header -->
+<section id="header">
+<div class="header container">
+<div class="nav-bar">
+<div class="brand">
+<a href="#hero">
+<h1><span>C</span>arlos <span>U</span>ribe</h1>
+</a>
+</div>
+<div class="nav-list">
+<div class="hamburger">
+<div class="bar"></div>
+</div>
+<ul>
+<li><a data-after="Home" data-i18n-key="nav_home" href="#hero">Home</a></li>
+<li><a data-after="Service" data-i18n-key="nav_services" href="#services">Services</a></li>
+<li><a data-after="Projects" data-i18n-key="nav_projects" href="#projects">Projects</a></li>
+<li><a data-after="About" data-i18n-key="nav_about" href="#about">About</a></li>
+<li><a data-after="Contact" data-i18n-key="nav_contact" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- End Header -->
+<!-- Hero Section  -->
+<section id="hero">
+<div class="hero container">
+<div>
+<h1>Hello, <span></span></h1>
+<h1>My Name is <span></span></h1>
+<h1>Carlos <span></span></h1>
+<a class="cta" data-i18n-key="Portfolio" href="#projects" type="button">Portfolio</a>
+</div>
+</div>
+</section>
+<!-- End Hero Section  -->
+<!-- Service Section -->
+<section id="services">
+<div class="services container">
+<div class="service-top">
+<h1 class="section-title" data-i18n-html="services_title_html">Serv<span>i</span>ces</h1>
+<p data-i18n-key="services_intro">I provide development of landing pages and responsive web applications using HTML, CSS, and JavaScript. My experience includes implementing attractive and functional designs to ensure an optimal user experience. Additionally, I utilize frameworks like React and Vue.js to enhance interactivity and performance of projects.</p>
+</div>
+<div class="service-bottom">
+<div class="service-item">
+<div class="icon"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><rect height="12" rx="2" width="18" x="3" y="4"></rect><path d="M2 20h20"></path></svg></div>
+<h2 data-i18n-key="svc_responsive_title">Responsive Websites</h2>
+<p data-i18n-key="svc_responsive_desc">Creating websites that adapt seamlessly to different screen sizes and devices, ensuring a consistent user experience.</p>
+</div>
+<div class="service-item">
+<div class="icon"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><rect height="12" rx="2" width="18" x="3" y="4"></rect><path d="M2 20h20"></path></svg></div>
+<h2 data-i18n-key="svc_performance_title">Performance Optimization</h2>
+<p data-i18n-key="svc_performance_desc">Enhancing website speed and performance through techniques like code splitting, lazy loading, and optimizing images.</p>
+</div>
+<div class="service-item">
+<div class="icon"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><rect height="12" rx="2" width="18" x="3" y="4"></rect><path d="M2 20h20"></path></svg></div>
+<h2 data-i18n-key="svc_seo_title">SEO Optimization</h2>
+<p data-i18n-key="svc_seo_desc">Implementing on-page SEO best practices to improve search engine visibility and drive organic traffic.</p>
+</div>
+<div class="service-item">
+<div class="icon"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><rect height="12" rx="2" width="18" x="3" y="4"></rect><path d="M2 20h20"></path></svg></div>
+<h2 data-i18n-key="svc_js_title">JavaScript Development</h2>
+<p data-i18n-key="svc_js_desc">Writing efficient and scalable JavaScript code to create dynamic web applications and enhance interactivity.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- End Service Section -->
+<!-- Projects Section -->
+<section id="projects">
+<div class="projects container">
+<div class="projects-header">
+<h1 class="section-title" data-i18n-html="projects_title_html">Recent <span>Projects</span></h1>
+</div>
+<div class="all-projects">
+<div class="project-item">
+<div class="project-info">
+<h1><a href="https://www.kireensportrehab.com/" rel="noopener noreferrer" target="_blank">Kireén Sports Rehab</a></h1>
+<h2 data-i18n-key="proj_kireen_sub">Physiotherapy Clinic Website</h2>
+<p data-i18n-key="proj_kireen_desc">Designed and developed a clean, fast, and mobile-first website for a physiotherapy clinic. Focused on clear service navigation, trust elements, and conversion paths (WhatsApp/booking). Implemented performance best practices and on-page SEO for local discovery.</p>
+</div>
+<div class="project-img">
+<a aria-label="Abrir proyecto" href="https://www.kireensportrehab.com/" rel="noopener noreferrer" target="_blank"><img alt="Kireén Sports Rehab website preview" src="./img/kireen.jpg"/></a>
+</div>
+<a class="project-link-overlay" href="https://www.kireensportrehab.com/" rel="noopener noreferrer" target="_blank">Abrir proyecto</a></div><div class="project-item">
+<div class="project-info">
+<h1><a data-i18n-key="Venezuelan Empanadas in Denver" href="https://laempanadaexpress.com/#" rel="noopener noreferrer" target="_blank">Venezuelan Empanadas in Denver</a></h1>
+<h2 data-i18n-key="proj_emp_sub">Empanada Grill</h2>
+<p data-i18n-key="proj_emp_desc">Developed a user-friendly website for a Venezuelan empanada business in Denver, showcasing their menu and unique offerings. Additionally, implemented a digital marketing strategy to enhance their online presence, drive traffic, and engage the local community.</p>
+</div>
+<div class="project-img">
+<a aria-label="Abrir proyecto" href="https://laempanadaexpress.com/#" rel="noopener noreferrer" target="_blank"><img alt="img" src="./img/venez.jpeg"/></a>
+</div>
+<a class="project-link-overlay" href="https://laempanadaexpress.com/#" rel="noopener noreferrer" target="_blank">Abrir proyecto</a></div>
+<div class="project-item">
+<div class="project-info">
+<h1><a href="https://www.rockymountainsnownpainting.com/" rel="noopener noreferrer" target="_blank">Rocky Mountain Snow &amp; Painting</a></h1>
+<h2 data-i18n-key="proj_rocky_sub">Welcome to Rocky Mountain Snow &amp; Painting</h2>
+<p data-i18n-key="proj_rocky_desc">I developed the website for Rocky Mountain Snow &amp; Painting, a business specializing in professional painting services and reliable snow removal. The site showcases their interior and exterior painting expertise while also offering an easy way for customers to learn about their snow removal services during the winter.</p>
+</div>
+<div class="project-img">
+<a aria-label="Abrir proyecto" href="https://www.rockymountainsnownpainting.com/" rel="noopener noreferrer" target="_blank"><img alt="img" src="./img/rocky.jpeg"/></a>
+</div>
+<a class="project-link-overlay" href="https://www.rockymountainsnownpainting.com/" rel="noopener noreferrer" target="_blank">Abrir proyecto</a></div>
+<div class="project-item">
+<div class="project-info">
+<h1><a href="https://www.lauradgz.com/" rel="noopener noreferrer" target="_blank">Laura's Real Estate Website</a></h1>
+<h2 data-i18n-key="proj_laura_sub">Real Estate Website</h2>
+<p data-i18n-key="proj_laura_desc">Designed and developed an engaging website for Laura's real estate business, emphasizing her commitment to helping clients discover their dream homes. The site features a user-friendly interface that highlights listings and promotes a personalized approach to finding not just a house, but a true home.</p>
+</div>
+<div class="project-img">
+<a aria-label="Abrir proyecto" href="https://www.lauradgz.com/" rel="noopener noreferrer" target="_blank"><img alt="img" src="./img/real.jpeg"/></a>
+</div>
+<a class="project-link-overlay" href="https://www.lauradgz.com/" rel="noopener noreferrer" target="_blank">Abrir proyecto</a></div>
+<div class="project-item">
+<div class="project-info">
+<h1><a href="https://www.merchantdemolition.com/" rel="noopener noreferrer" target="_blank">Merchant Demolition</a></h1>
+<h2 data-i18n-key="proj_merch_sub">Website</h2>
+<p data-i18n-key="proj_merch_desc">Developed a comprehensive website for Merchant Demolition, a leading company in residential and commercial remodeling in Colorado since 1997. The site highlights their skilled workforce, commitment to safety, and customer-centric approach. Focused on showcasing their services and fostering partnerships, I implemented features that enhance user experience and facilitate easy communication for potential clients.</p>
+</div>
+<div class="project-img">
+<a aria-label="Abrir proyecto" href="https://www.merchantdemolition.com/" rel="noopener noreferrer" target="_blank"><img alt="img" src="./img/merch.jpg"/></a>
+</div>
+<a class="project-link-overlay" href="https://www.merchantdemolition.com/" rel="noopener noreferrer" target="_blank">Abrir proyecto</a></div>
+</div>
+</div>
+</section>
+<!-- End Projects Section -->
+<!-- About Section -->
+<section id="about">
+<div class="about container">
+<div class="col-left">
+<div class="about-img">
+<img alt="img" src="./img/fam.jpeg"/>
+</div>
+</div>
+<div class="col-right">
+<h1 class="section-title" data-i18n-html="about_title_html">About <span>me</span></h1>
+<h2 data-i18n-key="about_name">Carlos Uribe Gomez</h2>
+<p data-i18n-key="about_bio">My name is Carlos Uribe Gomez, born in Mazatlán, Sinaloa, in 1998, and currently residing in Chihuahua, Chihuahua. My journey in technology began at a young age when I started interacting with computers. Fascinated by how they work, I pursued studies in programming and became a developer specializing in frontend and backend development, as well as UI/UX assistance. I am passionate about creating intuitive and engaging digital experiences and have honed my skills through self-directed projects. I am excited about the opportunity to collaborate with you!</p>
+<a class="cta" data-i18n-key="btn_download_resume" href="file:///D:/Ayla/Desktop/carlosCVpdf.pdf">Download Resume</a>
+</div>
+</div>
+</section>
+<!-- End About Section -->
+<!-- Contact Section -->
+<section id="contact">
+<div class="contact container">
+<div>
+<h1 class="section-title" data-i18n-html="contact_title_html">Contact <span>info</span></h1>
+</div>
+<div class="contact-items">
+<div class="contact-item">
+<div class="icon"><i class="icon" data-feather="smartphone"></i></div>
+<div class="contact-info">
+<h1 data-i18n-key="contact_phone">Phone</h1>
+<h2><a class="whatsapp-link" href="https://wa.me/5216144605618" rel="noopener" target="_blank">614 460 5618</a></h2>
+</div>
+</div>
+<div class="contact-item">
+<div class="icon"><i class="icon" data-feather="mail"></i></div>
+<div class="contact-info">
+<h1 data-i18n-key="contact_email">Email</h1>
+<h2>carlosuribe9@hotmail.com</h2>
+</div>
+</div>
+<div class="contact-item">
+<div class="icon"><i class="icon" data-feather="map-pin"></i></div>
+<div class="contact-info">
+<h1 data-i18n-key="contact_address">Address</h1>
+<h2>Chihuahua, Chihuahua MX</h2>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- End Contact Section -->
+<!-- Footer -->
+<section id="footer">
+<div class="footer container">
+<div class="brand">
+<h1><span>C</span>arlos <span>U</span>ribe</h1>
+</div>
+<h2 data-i18n-key="footer_websolution">Web Solution</h2>
+<div class="social-icon">
+<a href="https://www.instagram.com/goldenksh_/" target="_blank">
+<i class="icon icon-instagram" data-feather="instagram"></i>
+</a>
+</div>
+</div>
+<p>Copyright © 2025 Carlos. All rights reserved</p>
+</section>
+<!-- End Footer -->
+<script src="./app.js"></script>
+<script>if (window.feather) feather.replace();</script><button aria-label="Cambiar idioma / Change language" id="lang-toggle" title="ES / EN">ES</button><script>
+(function(){
+  var mapEnEs = {"Home": "Inicio", "About": "Sobre", "About me": "Sobre mí", "Aboutme": "Sobre mí", "Portfolio": "Portafolio", "Projects": "Proyectos", "Recent Projects": "Proyectos recientes", "RecentProjects": "Proyectos recientes", "Services": "Servicios", "Contact": "Contacto", "Contact info": "Contacto", "Contactinfo": "Contacto", "Address": "Dirección", "Email": "Correo electrónico", "Phone": "Teléfono", "Web Solution": "Solución web", "Responsive Websites": "Sitios web responsivos", "SEO Optimization": "Optimización SEO", "Website": "Sitio web", "Download Resume": "Descargar CV", "Physiotherapy Clinic Website": "Sitio web de clínica de fisioterapia", "Real Estate Website": "Sitio web inmobiliario", "Venezuelan Empanadas in Denver": "Empanadas venezolanas en Denver", "Welcome to Rocky Mountain Snow & Painting": "Bienvenido a Rocky Mountain Snow & Painting", "Creating websites that adapt seamlessly to different screen sizes and devices, ensuring a consistent user experience.": "Creación de sitios que se adaptan a distintos tamaños de pantalla y dispositivos, garantizando una experiencia consistente.", "Enhancing website speed and performance through techniques like code splitting, lazy loading, and optimizing images.": "Mejora de velocidad y rendimiento con técnicas como división de código, carga diferida y optimización de imágenes.", "Optimizing websites for search engines to improve visibility and attract more traffic using best SEO practices.": "Optimización para motores de búsqueda para mejorar la visibilidad y atraer más tráfico con buenas prácticas SEO.", "Designing and developing visually appealing and user-friendly websites with modern layouts and clear navigation.": "Diseño y desarrollo de sitios atractivos y fáciles de usar, con estructuras modernas y navegación clara.", "Writing efficient and scalable JavaScript code to create dynamic web applications and enhance interactivity.": "Código JavaScript eficiente y escalable para crear aplicaciones web dinámicas y con mayor interactividad.", "Building robust backend systems to ensure smooth server-side operations and secure data handling.": "Construcción de sistemas backend robustos para operaciones del lado del servidor y manejo seguro de datos.", "Web Development": "Desarrollo web", "UI/UX Design": "Diseño UI/UX", "Custom Solutions": "Soluciones a medida"};
+  var mapEsEn = {"Inicio": "Home", "Sobre": "About", "Sobre mí": "Aboutme", "Portafolio": "Portfolio", "Proyectos": "Projects", "Proyectos recientes": "RecentProjects", "Servicios": "Services", "Contacto": "Contactinfo", "Dirección": "Address", "Correo electrónico": "Email", "Teléfono": "Phone", "Solución web": "Web Solution", "Sitios web responsivos": "Responsive Websites", "Optimización SEO": "SEO Optimization", "Sitio web": "Website", "Descargar CV": "Download Resume", "Sitio web de clínica de fisioterapia": "Physiotherapy Clinic Website", "Sitio web inmobiliario": "Real Estate Website", "Empanadas venezolanas en Denver": "Venezuelan Empanadas in Denver", "Bienvenido a Rocky Mountain Snow & Painting": "Welcome to Rocky Mountain Snow & Painting", "Creación de sitios que se adaptan a distintos tamaños de pantalla y dispositivos, garantizando una experiencia consistente.": "Creating websites that adapt seamlessly to different screen sizes and devices, ensuring a consistent user experience.", "Mejora de velocidad y rendimiento con técnicas como división de código, carga diferida y optimización de imágenes.": "Enhancing website speed and performance through techniques like code splitting, lazy loading, and optimizing images.", "Optimización para motores de búsqueda para mejorar la visibilidad y atraer más tráfico con buenas prácticas SEO.": "Optimizing websites for search engines to improve visibility and attract more traffic using best SEO practices.", "Diseño y desarrollo de sitios atractivos y fáciles de usar, con estructuras modernas y navegación clara.": "Designing and developing visually appealing and user-friendly websites with modern layouts and clear navigation.", "Código JavaScript eficiente y escalable para crear aplicaciones web dinámicas y con mayor interactividad.": "Writing efficient and scalable JavaScript code to create dynamic web applications and enhance interactivity.", "Construcción de sistemas backend robustos para operaciones del lado del servidor y manejo seguro de datos.": "Building robust backend systems to ensure smooth server-side operations and secure data handling.", "Desarrollo web": "Web Development", "Diseño UI/UX": "UI/UX Design", "Soluciones a medida": "Custom Solutions"};
+
+  function swap(map){
+    var nodes = document.querySelectorAll('h1,h2,h3,p,a,span,button,li,div');
+    var keys = Object.keys(map).sort(function(a,b){return b.length - a.length;});
+    nodes.forEach(function(el){
+      var t = (el.innerText||'').trim();
+      if(map[t]) el.innerText = map[t];
+    });
+  }
+
+  function getLang(){
+    return localStorage.getItem('lang') || 'es';
+  }
+  function setLang(l){
+    localStorage.setItem('lang', l);
+  }
+
+  // Add minimal floating toggle if not exists
+  var btn = document.getElementById('lang-toggle');
+  if(!btn){
+     btn = document.createElement('button');
+     btn.id = 'lang-toggle';
+     btn.setAttribute('aria-label','Cambiar idioma / Change language');
+     btn.style.position='fixed'; btn.style.right='12px'; btn.style.bottom='12px';
+     btn.style.zIndex='9999'; btn.style.width='36px'; btn.style.height='36px';
+     btn.style.borderRadius='999px'; btn.style.background='rgba(17,17,17,.75)';
+     btn.style.color='#fff'; btn.style.border='none'; btn.style.display='inline-flex';
+     btn.style.alignItems='center'; btn.style.justifyContent='center';
+     btn.style.fontSize='10px'; btn.style.letterSpacing='.6px'; btn.style.cursor='pointer';
+     btn.style.backdropFilter='blur(4px)'; btn.style.opacity='.9';
+     btn.addEventListener('mouseenter', function(){ btn.style.opacity='1'; });
+     btn.addEventListener('mouseleave', function(){ btn.style.opacity='.9'; });
+     document.body.appendChild(btn);
+  }
+
+  // Initialize default language (Spanish) on first load
+  var cur = getLang();
+  if(cur === 'es') {
+    swap(mapEnEs);
+  } else {
+    swap(mapEsEn);
+  }
+  btn.textContent = cur.toUpperCase().slice(0,2);
+  btn.title = cur.toUpperCase();
+
+  // Toggle on click
+  btn.addEventListener('click', function(){
+    var cur = getLang();
+    var to = cur === 'es' ? 'en' : 'es';
+    if(to === 'es') swap(mapEnEs); else swap(mapEsEn);
+    setLang(to);
+    btn.textContent = to.toUpperCase().slice(0,2);
+    btn.title = to.toUpperCase();
+  });
+})();
+</script><script>
+(function(){
+  var dict = {"en": {"Home": "Home", "About": "About", "About me": "About me", "Aboutme": "Aboutme", "Portfolio": "Portfolio", "Projects": "Projects", "Recent Projects": "Recent Projects", "RecentProjects": "RecentProjects", "Services": "Services", "Contact": "Contact", "Contact info": "Contact info", "Contactinfo": "Contactinfo", "Address": "Address", "Email": "Email", "Phone": "Phone", "Web Solution": "Web Solution", "Responsive Websites": "Responsive Websites", "SEO Optimization": "SEO Optimization", "Website": "Website", "Download Resume": "Download Resume", "Physiotherapy Clinic Website": "Physiotherapy Clinic Website", "Real Estate Website": "Real Estate Website", "Venezuelan Empanadas in Denver": "Venezuelan Empanadas in Denver", "Welcome to Rocky Mountain Snow & Painting": "Welcome to Rocky Mountain Snow & Painting"},
+               "es": {"Home": "Inicio", "About": "Sobre", "About me": "Sobre mí", "Aboutme": "Sobre mí", "Portfolio": "Portafolio", "Projects": "Proyectos", "Recent Projects": "Proyectos recientes", "RecentProjects": "Proyectos recientes", "Services": "Servicios", "Contact": "Contacto", "Contact info": "Contacto", "Contactinfo": "Contacto", "Address": "Dirección", "Email": "Correo electrónico", "Phone": "Teléfono", "Web Solution": "Solución web", "Responsive Websites": "Sitios web responsivos", "SEO Optimization": "Optimización SEO", "Website": "Sitio web", "Download Resume": "Descargar CV", "Physiotherapy Clinic Website": "Sitio web de clínica de fisioterapia", "Real Estate Website": "Sitio web inmobiliario", "Venezuelan Empanadas in Denver": "Empanadas venezolanas en Denver", "Welcome to Rocky Mountain Snow & Painting": "Bienvenido a Rocky Mountain Snow & Painting"}};
+  function setLang(lang){
+    document.querySelectorAll('[data-i18n-key]').forEach(function(el){
+    // text keys
+
+      var key = el.getAttribute('data-i18n-key');
+      var txt = (dict[lang] && dict[lang][key]) ? dict[lang][key] : null;
+      if (typeof txt === 'string') { el.textContent = txt; }
+    });
+    // html keys
+document.querySelectorAll('[data-i18n-html]').forEach(function(el){
+  var k = el.getAttribute('data-i18n-html');
+  var t = dict[k] && dict[k][lang];
+  if (typeof t === 'string') el.innerHTML = t;
+});
+    localStorage.setItem('lang', lang);
+    var b = document.getElementById('lang-toggle');
+    if(b) { b.textContent = (lang==='es'?'ES':'EN'); b.title = b.textContent; }
+  }
+  var b = document.getElementById('lang-toggle');
+  if(b && !b.dataset.bound) {
+    b.addEventListener('click', function(){
+      var cur = localStorage.getItem('lang') || 'es';
+      var to = cur === 'es' ? 'en' : 'es';
+      setLang(to);
+    });
+    b.dataset.bound = '1';
+  }
+  // Initialize to ES by default without modifying any styles
+  setLang(localStorage.getItem('lang') || 'es');
+})();
+</script><script>window.__i18n = {"nav_home": {"es": "Inicio", "en": "Home"}, "nav_services": {"es": "Servicios", "en": "Services"}, "nav_projects": {"es": "Proyectos", "en": "Projects"}, "nav_about": {"es": "Sobre mí", "en": "About me"}, "nav_contact": {"es": "Contacto", "en": "Contact"}, "hero_hello": {"es": "Hola,", "en": "Hello,"}, "hero_mynameis": {"es": "Mi nombre es", "en": "My Name is"}, "hero_name": {"es": "Carlos", "en": "Carlos"}, "brand_split": {"es": "C arlos U ribe", "en": "C arlos U ribe"}, "btn_download_resume": {"es": "Descargar CV", "en": "Download Resume"}, "services_heading": {"es": "Servicios", "en": "Services"}, "svc_responsive_title": {"es": "Sitios web responsivos", "en": "Responsive Websites"}, "svc_responsive_desc": {"es": "Creación de sitios que se adaptan a distintos tamaños de pantalla y dispositivos, garantizando una experiencia consistente.", "en": "Creating websites that adapt seamlessly to different screen sizes and devices, ensuring a consistent user experience."}, "svc_performance_title": {"es": "Optimización de rendimiento", "en": "Performance Optimization"}, "svc_performance_desc": {"es": "Mejora de velocidad y rendimiento con técnicas como división de código, carga diferida y optimización de imágenes.", "en": "Enhancing website speed and performance through techniques like code splitting, lazy loading, and optimizing images."}, "svc_seo_title": {"es": "Optimización SEO", "en": "SEO Optimization"}, "svc_seo_desc": {"es": "Aplicación de buenas prácticas SEO on‑page para mejorar la visibilidad en buscadores y atraer tráfico orgánico.", "en": "Implementing on-page SEO best practices to improve search engine visibility and drive organic traffic."}, "svc_js_title": {"es": "Desarrollo con JavaScript", "en": "JavaScript Development"}, "svc_js_desc": {"es": "Código JavaScript eficiente y escalable para crear aplicaciones web dinámicas y con mayor interactividad.", "en": "Writing efficient and scalable JavaScript code to create dynamic web applications and enhance interactivity."}, "projects_heading": {"es": "Proyectos recientes", "en": "Recent Projects"}, "proj_kireen_title": {"es": "Kireén Sports Rehab", "en": "Kireén Sports Rehab"}, "proj_kireen_sub": {"es": "Sitio web de clínica de fisioterapia", "en": "Physiotherapy Clinic Website"}, "proj_kireen_desc": {"es": "Diseñé y desarrollé un sitio limpio, rápido y mobile‑first para una clínica de fisioterapia. Enfoque en navegación clara de servicios, elementos de confianza y rutas de conversión (WhatsApp/booking). Implementé buenas prácticas de rendimiento y SEO local.", "en": "Designed and developed a clean, fast, and mobile-first website for a physiotherapy clinic. Focused on clear service navigation, trust elements, and conversion paths (WhatsApp/booking). Implemented performance best practices and on-page SEO for local discovery."}, "proj_emp_title": {"es": "Empanadas venezolanas en Denver", "en": "Venezuelan Empanadas in Denver"}, "proj_emp_sub": {"es": "Empanada Grill", "en": "Empanada Grill"}, "proj_emp_desc": {"es": "Desarrollé un sitio fácil de usar para un negocio de empanadas venezolanas en Denver, mostrando su menú y propuestas únicas. Además, implementé una estrategia de marketing digital para fortalecer su presencia online, atraer tráfico y conectar con la comunidad local.", "en": "Developed a user-friendly website for a Venezuelan empanada business in Denver, showcasing their menu and unique offerings. Additionally, implemented a digital marketing strategy to enhance their online presence, drive traffic, and engage the local community."}, "proj_rocky_title": {"es": "Rocky Mountain Snow & Painting", "en": "Rocky Mountain Snow & Painting"}, "proj_rocky_sub": {"es": "Bienvenido a Rocky Mountain Snow & Painting", "en": "Welcome to Rocky Mountain Snow & Painting"}, "proj_rocky_desc": {"es": "Desarrollé el sitio para Rocky Mountain Snow & Painting, un negocio especializado en pintura profesional y remoción de nieve. El sitio presenta su experiencia en pintura interior/exterior y facilita a los clientes conocer su servicio de remoción de nieve en temporada invernal.", "en": "I developed the website for Rocky Mountain Snow & Painting, a business specializing in professional painting services and reliable snow removal. The site showcases their interior and exterior painting expertise while also offering an easy way for customers to learn about their snow removal services during the winter."}, "proj_laura_title": {"es": "Sitio web inmobiliario de Laura", "en": "Laura's Real Estate Website"}, "proj_laura_sub": {"es": "Sitio web inmobiliario", "en": "Real Estate Website"}, "proj_laura_desc": {"es": "Diseñé y desarrollé un sitio atractivo para el negocio inmobiliario de Laura, destacando su compromiso con ayudar a clientes a encontrar el hogar ideal. La interfaz facilita explorar listados y refuerza un enfoque personalizado para hallar no sólo una casa, sino un verdadero hogar.", "en": "Designed and developed an engaging website for Laura's real estate business, emphasizing her commitment to helping clients discover their dream homes. The site features a user-friendly interface that highlights listings and promotes a personalized approach to finding not just a house, but a true home."}, "proj_merch_title": {"es": "Merchant Demolition", "en": "Merchant Demolition"}, "proj_merch_sub": {"es": "Sitio web", "en": "Website"}, "proj_merch_desc": {"es": "Desarrollé un sitio integral para Merchant Demolition, una empresa líder en remodelación residencial y comercial en Colorado desde 1997. El sitio destaca su equipo calificado, enfoque en seguridad y trato al cliente. Implementé funciones para mejorar la experiencia de usuario y facilitar el contacto de potenciales clientes.", "en": "Developed a comprehensive website for Merchant Demolition, a leading company in residential and commercial remodeling in Colorado since 1997. The site highlights their skilled workforce, commitment to safety, and customer-centric approach. Focused on showcasing their services and fostering partnerships, I implemented features that enhance user experience and facilitate easy communication for potential clients."}, "about_heading": {"es": "Sobre mí", "en": "About me"}, "about_name": {"es": "Carlos Uribe Gomez", "en": "Carlos Uribe Gomez"}, "about_bio": {"es": "Me llamo Carlos Uribe Gomez, nacido en Mazatlán, Sinaloa, en 1998. Soy desarrollador web con experiencia en una amplia gama de sectores (construcción, restaurantes, demolición, bienes raíces y salud) tanto en México como en Estados Unidos. Casi 5 años creando soluciones digitales: desde landing pages rápidas hasta sitios corporativos completos. Trabajo con enfoque en rendimiento, SEO y una entrega cuidada del diseño. Me encanta aprender y mejorar continuamente mis habilidades. Estoy emocionado por la oportunidad de colaborar contigo.", "en": "My name is Carlos Uribe Gomez, born in Mazatlán, Sinaloa, in 1998. I am a web developer with experience across multiple sectors (construction, restaurants, demolition, real estate, and healthcare) in both Mexico and the United States. Nearly 5 years building digital solutions: from fast landing pages to full corporate sites. I work with a focus on performance, SEO, and carefully crafted design. I love learning and continuously improving my skills. I am excited about the opportunity to collaborate with you!"}, "contact_heading": {"es": "Contacto", "en": "Contact info"}, "contact_phone": {"es": "Teléfono", "en": "Phone"}, "contact_email": {"es": "Correo electrónico", "en": "Email"}, "contact_address": {"es": "Dirección", "en": "Address"}, "footer_websolution": {"es": "Solución web", "en": "Web Solution"},
+"services_title_html": {"es":"Serv<span>i</span>cios","en":"Serv<span>i</span>ces"},
+"services_intro": {"es":"Ofrezco desarrollo de landing pages y aplicaciones web responsivas utilizando HTML, CSS y JavaScript. Mi experiencia incluye implementar diseños atractivos y funcionales para garantizar una experiencia de usuario óptima. Además, utilizo frameworks como React y Vue.js para mejorar la interactividad y el rendimiento de los proyectos.","en":"I provide development of landing pages and responsive web applications using HTML, CSS, and JavaScript. My experience includes implementing attractive and functional designs to ensure an optimal user experience. Additionally, I utilize frameworks like React and Vue.js to enhance interactivity and performance of projects."}
+};
+window.__i18n["projects_title_html"] = {"en":"Recent <span>Projects</span>","es":"Proyectos <span>recientes</span>"};
+window.__i18n["about_title_html"] = {"en":"About <span>me</span>","es":"Sobre <span>mí</span>"};
+window.__i18n["contact_title_html"] = {"en":"Contact <span>info</span>","es":"Contacto <span>información</span>"};</script><script>
+(function(){
+  var dict = window.__i18n;
+  function setLang(lang){
+    document.querySelectorAll('[data-i18n-key]').forEach(function(el){
+      var k = el.getAttribute('data-i18n-key');
+      var t = dict[k] && dict[k][lang];
+      if (typeof t === 'string') el.textContent = t;
+    });
+    localStorage.setItem('lang', lang);
+    var b = document.getElementById('lang-toggle');
+    if (b) { b.textContent = (lang==='es'?'ES':'EN'); b.title = b.textContent; }
+    document.documentElement.setAttribute('lang', lang);
+  }
+  var b = document.getElementById('lang-toggle');
+  if (!b){
+    b = document.createElement('button');
+    b.id = 'lang-toggle';
+    b.setAttribute('aria-label','ES / EN');
+    b.style.position='fixed'; b.style.right='12px'; b.style.bottom='12px';
+    b.style.zIndex='9999'; b.style.width='36px'; b.style.height='36px';
+    b.style.borderRadius='999px'; b.style.background='rgba(17,17,17,.75)';
+    b.style.color='#fff'; b.style.border='none'; b.style.display='inline-flex';
+    b.style.alignItems='center'; b.style.justifyContent='center';
+    b.style.font='inherit'; b.style.fontSize='10px'; b.style.letterSpacing='.6px';
+    b.style.cursor='pointer'; b.style.backdropFilter='blur(4px)'; b.style.opacity='.9';
+    b.addEventListener('mouseenter', function(){ b.style.opacity='1'; });
+    b.addEventListener('mouseleave', function(){ b.style.opacity='.9'; });
+    document.body.appendChild(b);
+  }
+  b.addEventListener('click', function(){
+    var cur = localStorage.getItem('lang') || 'es';
+    var to = cur === 'es' ? 'en' : 'es';
+    setLang(to);
+  });
+  // Initialize to Spanish
+  setLang(localStorage.getItem('lang') || 'es');
+})();</script>
+<div id="wa-bubble" class="wa-bubble" aria-live="polite">
+  <button class="wa-fab" aria-expanded="false" aria-controls="wa-panel" aria-label="Abrir chat de WhatsApp">
+    <svg viewBox="0 0 32 32" class="wa-icon" aria-hidden="true"><path d="M19.11 17.33c-.28-.14-1.64-.8-1.9-.89-.26-.1-.45-.14-.63.14-.19.28-.72.9-.89 1.08-.17.19-.33.21-.61.07-.28-.14-1.18-.43-2.24-1.37-.83-.73-1.39-1.63-1.56-1.91-.17-.28-.02-.43.13-.57.13-.13.28-.33.42-.49.14-.17.19-.28.28-.47.1-.19.05-.36-.02-.5-.07-.14-.63-1.52-.86-2.09-.23-.55-.46-.47-.63-.47h-.54c-.19 0-.5.07-.76.36-.26.28-1 1-1 2.45 0 1.45 1.03 2.85 1.17 3.05.14.19 2.03 3.1 4.91 4.24.69.3 1.22.48 1.64.61.69.22 1.32.19 1.82.12.56-.08 1.64-.67 1.87-1.32.23-.65.23-1.21.16-1.33-.06-.12-.25-.2-.53-.35z"></path><path d="M16 3.1C8.87 3.1 3.1 8.87 3.1 16c0 2.28.61 4.43 1.66 6.28L3 29l6.9-1.8A12.83 12.83 0 0 0 16 28.9c7.13 0 12.9-5.77 12.9-12.9S23.13 3.1 16 3.1zm0 23.2c-2.22 0-4.28-.72-5.96-1.94l-.43-.29-4.1 1.08 1.1-3.99-.3-.43A10.9 10.9 0 1 1 16 26.3z"></path></svg>
+  </button>
+  <div id="wa-panel" class="wa-panel" role="dialog" aria-label="Chat de WhatsApp">
+    <div class="wa-header">
+      <div class="wa-avatar" aria-hidden="true">
+        <svg viewBox="0 0 40 40" class="wa-avatar-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="C logo">
+          <rect x="0" y="0" width="40" height="40" rx="20" ry="20" fill="#000000"/>
+          <text x="50%" y="62%" text-anchor="middle" font-size="24" font-weight="700" fill="#ff8a00" font-family="Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial">C</text>
+        </svg>
+      </div>
+      <div>
+        <strong>Carlos Uribe Gómez</strong>
+        <div class="wa-sub">En línea</div>
+      </div>
+      <button class="wa-close" aria-label="Cerrar">×</button>
+    </div>
+    <div class="wa-body">
+      <p>¡Hola! ¿Cómo puedo ayudarte?</p>
+      <textarea id="wa-msg" rows="2" placeholder="Escribe tu mensaje aquí..."></textarea>
+      <button id="wa-send" class="wa-send">Enviar mensaje</button>
+    </div>
+  </div>
+</div>
+<style>
+/* WhatsApp bubble widget */
+.wa-bubble{position:fixed; right:max(16px, env(safe-area-inset-right)); bottom:max(16px, env(safe-area-inset-bottom)); z-index:9999; font-family:inherit}
+.wa-fab{width:56px;height:56px;border-radius:999px;border:2px solid #ffffff;background:#0f172a;box-shadow:0 8px 24px rgba(0,0,0,.30);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.wa-fab .wa-icon{width:28px;height:28px;fill:#ffffff}
+.wa-panel{position:fixed; right:max(16px, env(safe-area-inset-right)); bottom:max(82px, calc(16px + env(safe-area-inset-bottom))); width:min(92vw, 340px); background:#fff; border-radius:16px; box-shadow:0 12px 40px rgba(0,0,0,.28); overflow:hidden; transform:translateY(16px); opacity:0; pointer-events:none; transition:.25s ease}
+.wa-panel.open{transform:translateY(0); opacity:1; pointer-events:auto}
+.wa-header{display:flex; align-items:center; gap:10px; padding:12px 12px; background:#f6f7f8; border-bottom:1px solid rgba(0,0,0,.06)}
+.wa-avatar{width:36px; height:36px; border-radius:50%; overflow:hidden; background:#000000; display:inline-flex; align-items:center; justify-content:center}
+.wa-avatar-svg{width:100%; height:100%; display:block}
+.wa-sub{font-size:12px; color:#6b7280}
+.wa-close{margin-left:auto; background:none; border:none; font-size:22px; line-height:1; cursor:pointer; color:#374151}
+.wa-body{padding:12px; display:flex; flex-direction:column; gap:8px}
+#wa-msg{width:100%; border:1px solid #e5e7eb; border-radius:10px; padding:8px 10px; resize:vertical}
+.wa-send{background:#111827; color:#fff; border:none; border-radius:12px; padding:10px 12px; cursor:pointer}
+@media (prefers-color-scheme: dark){
+  .wa-panel{background:#111827; color:#e5e7eb}
+  .wa-header{background:#0f172a; border-bottom-color:#0b1322}
+  .wa-close{color:#cbd5e1}
+  #wa-msg{background:#0b1322; color:#e5e7eb; border-color:#1f2937}
+  .wa-send{background:#e5e7eb; color:#111827}
+}
+</style>
+<script>
+(function(){
+  var fab = document.querySelector('.wa-fab');
+  var panel = document.getElementById('wa-panel');
+  var closeBtn = document.querySelector('.wa-close');
+  var sendBtn = document.getElementById('wa-send');
+  var msg = document.getElementById('wa-msg');
+  var activePhone = '+526144605618'; // tu número
+
+  function openPanel(){ panel.classList.add('open'); fab.setAttribute('aria-expanded','true'); }
+  function closePanel(){ panel.classList.remove('open'); fab.setAttribute('aria-expanded','false'); }
+
+  fab.addEventListener('click', function(){ panel.classList.contains('open') ? closePanel() : openPanel(); });
+  closeBtn.addEventListener('click', closePanel);
+
+  sendBtn.addEventListener('click', function(){
+    var text = msg.value.trim() || 'Hola, vengo desde tu sitio web.';
+    var url = 'https://wa.me/' + activePhone.replace(/[^0-9]/g,'') + '?text=' + encodeURIComponent(text);
+    window.open(url, '_blank', 'noopener');
+  });
+
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closePanel(); });
+})();
+</script>
+
+</body>
+</html>
